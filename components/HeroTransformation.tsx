@@ -22,8 +22,7 @@ export default function HeroTransformation(){
         stage.style.filter=`brightness(${.92+p*.13}) saturate(${.9+p*.15})`;
         const k=gsap.utils.clamp(0,1,(p-.3)/.6);bg.style.background=gsap.utils.interpolate("#0B3D2E","#E9EFEA",k);
         el.style.color=gsap.utils.interpolate("#F7F3E8","#072A20",k);
-        C.forEach((c,i)=>{const a=p>=[0,.36,.7][i]&&p<[.3,.66,1.01][i]?1:0;c.style.opacity=String(a);c.style.transform=`translateY(${a?0:24}px)`;});
-      };
+        C.forEach((c,i)=>{const a=p>=[0,.36,.7][i]&&p<[.3,.66,1.01][i]?1:0;c.style.opacity=String(a);});
       u(0);const st=ScrollTrigger.create({trigger:el,start:"top top",end:"bottom bottom",scrub:true,onUpdate:s=>u(s.progress)});
       return()=>st.kill();
     });
