@@ -11,7 +11,7 @@ export const site = {
   nav: [["Home","#home"],["Courses","#courses"],["Results","#results"],["Faculty","#faculty"],["About","#about"],["Contact","#contact"]] as [string,string][],
   hero: ["EVERY DOCTOR\nSTARTS AS A STUDENT.","YOUR JOURNEY\nSTARTS HERE.","FROM ASPIRATION\nTO ACHIEVEMENT."],
   heroSub: "Right guidance. Consistent practice. A clear path to your dream.",
-  frames: ["student-01","student-02","student-03","student-04","doctor"].map(f=>`/images/transformation/${f}.webp`),
+  frames: ["student-01","student-02","student-03","student-04"].map(f=>`/images/transformation/${f}.webp`),
 };
 export const stats = [
   {value:"10+",label:"Years of excellence"},{value:"10,000+",label:"Students guided"},
