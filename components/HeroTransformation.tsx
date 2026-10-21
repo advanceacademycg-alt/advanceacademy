@@ -8,6 +8,7 @@ export default function HeroTransformation(){
   const root=useRef<HTMLElement>(null);
   useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.config({ ignoreMobileResize: true });
     const el=root.current!;const L=[...el.querySelectorAll<HTMLElement>("[data-l]")];
     const C=[...el.querySelectorAll<HTMLElement>("[data-c]")];
     const stage=el.querySelector<HTMLElement>("[data-stage]")!;
