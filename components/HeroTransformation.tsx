@@ -41,7 +41,7 @@ export default function HeroTransformation(){
           <a href={waLink} className="rounded-full bg-gold px-7 py-3.5 font-bold text-green-deep">START YOUR JOURNEY</a>
           <a href="#results" className="rounded-full border border-current px-7 py-3.5 font-bold">EXPLORE OUR RESULTS</a></div>
       </div>
-      <div data-stage className="relative h-[52vh] md:h-screen will-change-[filter]">
+      <div data-stage className="relative h-[46svh] md:h-[calc(100vh-6rem)] md:origin-bottom md:scale-[1.15] md:translate-y-[4%] will-change-[filter]">
         {site.frames.map((f,i)=><img key={f} data-l src={f} alt={i===0?"Advance Academy student preparing for NEET":""} aria-hidden={i!==0} fetchPriority={i===0?"high":"auto"} decoding="async"
           className="absolute inset-0 h-full w-full object-contain object-bottom" style={i?{opacity:0}:undefined}/>)}
       </div>
