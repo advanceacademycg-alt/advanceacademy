@@ -31,7 +31,7 @@ export default function HeroTransformation(){
     return()=>mm.revert();
   },[]);
   return <section id="home" ref={root} aria-label="Student to doctor" className="relative h-[420vh] text-ivory">
-    <div data-bg className="sticky top-5 flex h-screen flex-col-reverse overflow-hidden bg-green md:grid md:grid-cols-2 md:items-center">
+    <div data-bg className="sticky top-0 box-border flex h-[100svh] flex-col-reverse overflow-hidden bg-green pt-20 md:grid md:grid-cols-2 md:items-center md:pt-24">
       <div className="relative z-10 px-6 md:px-16 md:pb-0 ">
         <div className="relative h-36 sm:h-44 md:h-72">
           {site.hero.map((h,i)=>{const Tag=i?"p":"h1";return <Tag key={i} data-c style={{opacity:i?0:1}} className="absolute inset-0 whitespace-pre-line text-4xl font-extrabold leading-[1.05] tracking-tight transition-all duration-500 sm:text-5xl md:text-6xl lg:text-7xl">{h}</Tag>;})}
