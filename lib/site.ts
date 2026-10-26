@@ -8,7 +8,7 @@ export const site = {
   address: ["In Front of JAYEKA RESTRA", "Gandhinagar", "Ambikapur (C.G.)"],
   url: "https://advanceacademy.example",
   logo: "/images/logo.png",
-  offer: "", //ex; Admissions open — limited seats//shown in footer strip if not empty
+  offer: "Chhattishgarh's Biggest Scholership Program Is Here| REGISTER NOW ", //ex; Admissions open — limited seats//shown in footer strip if not empty
   nav: [["Home","#home"],["Courses","#courses"],["Results","#results"],["Faculty","#faculty"],["About","#about"],["Contact","#contact"]] as [string,string][],
   hero: ["EVERY DOCTOR\nSTARTS AS A STUDENT.","YOUR JOURNEY\nSTARTS HERE.","FROM ASPIRATION\nTO ACHIEVEMENT."],
   heroSub: "Right guidance. Consistent practice. A clear path to your dream.",
