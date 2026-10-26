@@ -6,7 +6,7 @@ export default function Navbar(){
   useEffect(()=>{const f=()=>setS(scrollY>40);f();addEventListener("scroll",f,{passive:true});return()=>removeEventListener("scroll",f);},[]);
   return <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${s||o?"bg-green-deep/95 backdrop-blur py-2":"py-5"}`}>
     <nav aria-label="Main" className="mx-auto flex max-w-7xl items-center justify-between px-5 text-ivory">
-      <a href="#home" className="flex items-center gap-3 font-bold"><img src={site.logo} alt={`${site.name} logo`} className={`transition-all ${s?"h-9":"h-12"} w-auto`}/><span className="hidden sm:block">{site.name}</span></a>
+      <a href="#home" className="flex items-center gap-3 font-bold"><img src={site.logo} alt={`${site.name} logo`} className={`transition-all ${s?"h-9":"h-12"} w-auto`}/><span className="whitespace-nowrap text-base font-bold sm:text-lg">{site.name}</span></a>
       <ul className="hidden items-center gap-8 text-sm lg:flex">{site.nav.map(([l,h])=><li key={h}><a href={h} className="hover:text-gold">{l}</a></li>)}</ul>
       <div className="flex items-center gap-3">
         <a href="#contact" className="hidden rounded-full bg-gold px-5 py-2 text-sm font-bold text-green-deep sm:block">Admission Enquiry</a>
