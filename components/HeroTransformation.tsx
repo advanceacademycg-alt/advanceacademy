@@ -89,6 +89,7 @@ export default function HeroTransformation() {
             >
               EXPLORE OUR RESULTS
             </a>
+            <a href={site.registerUrl}target="_blank"rel="noopener noreferrer"className="rounded-full border-2 border-gold px-7 py-3.5 font-bold">REGISTER NOW</a>
           </div>
         </div>
 
