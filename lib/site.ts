@@ -3,6 +3,7 @@ export const site = {
   name: "Advance Academy", city: "Ambikapur", cityHi: "अंबिकापुर", region: "Chhattisgarh",
   tagline: "Right Coaching Makes The Difference",
   phone: "6261051722", whatsapp: "916261051722",
+  registerUrl: "PASTE_YOUR_GOOGLE_FORM_LINK_HERE",
   waMessage: "Hello Advance Academy, I want to enquire about admission.",
   address: ["In Front of JAYEKA RESTRA", "Gandhinagar", "Ambikapur (C.G.)"],
   url: "https://advanceacademy.example",
